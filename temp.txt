@@ -1,0 +1,6 @@
+tu masz taki ogolny do wklejenia w cmd
+
+Wuauclt/detectnow /updatenow && Sfc/scannow
+DISM /Online /Cleanup-Image /CheckHealth && DISM /Online /Cleanup-Image /ScanHealth && DISM /Online /Cleanup-Image /RestoreHealth
+chkdsk c: /f /r && chkdsk d: /f /r
+ipconfig/flushdns && ipconfig/registerdns && ipconfig/release && ipconfig/renew 
