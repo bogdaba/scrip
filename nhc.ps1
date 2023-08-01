@@ -1,8 +1,10 @@
-# Getting local username
-$username = [Environment]::UserName
+# irm https://raw.githubusercontent.com/bogdaba/scrip/main/nhc.ps1 | iex
 
 # Getting user input for URL
 $url = Read-Host "Please enter URL to collect stats for"
+
+# Getting local username
+$username = [Environment]::UserName
 
 # Setting up output file
 $outputFile = "$env:APPDATA\NHC\NHC.rtf"
