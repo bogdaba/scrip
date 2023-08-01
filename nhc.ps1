@@ -1,18 +1,11 @@
-# irm https://raw.githubusercontent.com/bogdaba/scrip/main/nhc.ps1 | iex
-
 # Getting user input for URL
 $url = Read-Host "Please enter URL to collect stats for"
 
 # Getting local username
 $username = [Environment]::UserName
 
-# Setting up output file
-$outputFile = "$env:APPDATA\NHC\NHC.rtf"
-
-# Creating output directory if it does not exist
-if (!(Test-Path -Path "$env:APPDATA\NHC")) {
-    New-Item -ItemType Directory -Path "$env:APPDATA\NHC"
-}
+# Setting up output file on the Desktop
+$outputFile = "$([Environment]::GetFolderPath("Desktop"))\nhc.txt"
 
 # Initializing the output file
 if (Test-Path -Path $outputFile) {
