@@ -1,11 +1,11 @@
-# irm https://raw.githubusercontent.com/bogdaba/scrip/main/ogolny.ps1 | iex
+//raw.githubusercontent.com/bogdaba/scrip/main/ogolny.ps1 | iex
 
 # Define array of commands
 $commands = @(
     @{Cmd = "wuauclt /detectnow /updatenow"; Desc = "Windows Update"},
     @{Cmd = "sfc /scannow"; Desc = "System File Check"},
-    @{Cmd = "DISM /Online /Cleanup-Image /CheckHealth"; Desc = "DISM CheckHealth"},
-    @{Cmd = "DISM /Online /Cleanup-Image /ScanHealth"; Desc = "DISM ScanHealth"},
+    #@{Cmd = "DISM /Online /Cleanup-Image /CheckHealth"; Desc = "DISM CheckHealth"},
+    #@{Cmd = "DISM /Online /Cleanup-Image /ScanHealth"; Desc = "DISM ScanHealth"},
     @{Cmd = "DISM /Online /Cleanup-Image /RestoreHealth"; Desc = "DISM RestoreHealth"},
     #@{Cmd = "chkdsk c: /f /r"; Desc = "Check Disk C:"},
     #@{Cmd = "chkdsk d: /f /r"; Desc = "Check Disk D:"},
