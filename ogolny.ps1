@@ -31,3 +31,4 @@ foreach ($command in $commands) {
 }
 
 # Ran following commands on user's PC: "wuauclt /detectnow /updatenow", "sfc /scannow", "DISM /Online /Cleanup-Image /CheckHealth", "DISM /Online /Cleanup-Image /ScanHealth", "DISM /Online /Cleanup-Image /RestoreHealth" "ipconfig /flushdns", "ipconfig /registerdns", "ipconfig /release", "ipconfig /renew", "gpupdate /force"
+
